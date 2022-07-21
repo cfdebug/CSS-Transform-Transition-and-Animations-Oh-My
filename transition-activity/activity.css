@@ -8,3 +8,33 @@ button:hover{
     background-color: cornflowerblue;
     color: white;
 }
+
+.caption {
+    position:relative;
+}
+
+.caption-overlay{
+    position:absolute;
+    top: 0;
+    right: 14%;
+    bottom: 0;
+    left: 14%;
+    padding: 10px;
+    color: white; 
+    transform:translateY(92%);
+    transition: transform .5s ease-in-out;  
+}
+
+.caption-overlay-title{
+    text-align: left;
+}
+
+.caption-overlay-content{
+    text-align: center;
+    font-size: larger;
+}
+
+.caption:hover .caption-overlay{
+    transform:translateY(0);
+    transition: transform .5s ease-in-out .5s;
+}
